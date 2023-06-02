@@ -64,6 +64,7 @@ module TinyMCE::Rails
 
     # Includes TinyMCE javascript assets via a script tag.
     def tinymce_assets
+      byebug
       javascript_include_tag "#{tinymce_configuration['cnd_url']}", "referrerpolicy" => "origin", "data-turbolinks-track" => "reload"
     end
 
